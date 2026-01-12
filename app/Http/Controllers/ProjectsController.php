@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
-use Illuminate\Http\Request;
 
 class ProjectsController extends Controller
 {
@@ -14,7 +13,6 @@ class ProjectsController extends Controller
 
     public function show(Project $project)
     {
-        @dd($project);
         return view('projects.show', compact('project'));
     }
 }
