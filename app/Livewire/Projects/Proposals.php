@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class Proposals extends Component
 {
-    protected Project $project;
+    public Project $project;
     public function render()
     {
         return view('livewire.projects.proposals');

@@ -12,7 +12,8 @@ class Index extends Component
     {
         return view('livewire.projects.index');
     }
-
+    //Propriedade Computada: O uso de propriedades computadas é uma boa prática pois o Livewire faz o cache do resultado
+    //durante uma única requisição, evitando múltiplas consultas ao banco de dados.
     #[Computed()]
     public function projects()
     {
