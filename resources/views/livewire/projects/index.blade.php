@@ -4,7 +4,7 @@
          já $project é um model--}}
     @foreach ($this->projects as $project)
         <a href="{{ route('projects.show', $project) }}">
-            <x-project-card-simple :project="$project"/>
+            <x-projects.simple-card :project="$project"/>
         </a>
     @endforeach
 </div>
